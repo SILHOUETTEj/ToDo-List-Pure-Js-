@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    height: 90vh;
+    width: 50vw;
+    padding: 20px 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(55, 92, 172);
+    border-radius: 7px;
+}
+.container__todo-menu{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+}
+.add-task-btn{
+    background: none;
+    font-size: 17px;
+    color:rgb(55, 92, 172);
+    border-radius:10px;
+    margin-left: 20px;
+    padding: 3px 10px;
+    border: 2px solid rgb(55, 92, 172);
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.add-task-btn:hover{
+    background: rgb(55, 92, 172);
+    color:white;
+}
+.container__input{
+    display: flex;
+    align-items: center;
+}
+.description-task{
+    box-shadow:0 0 15px 4px rgba(55, 92, 172,0.3);
+    border:0;
+    border-radius: 3px;
+    padding:3px 5px;
+    width: 100%;
+}
+.description-task:focus{
+    outline: 2px solid rgb(55, 92, 172);
+   
+   
+}
+.main-title{
+    font-size: 40px;
+    color:rgb(55, 92, 172);
+}
+.subtitle{
+    color:rgb(55, 92, 172);
+    font-size: 27px;
+}
+.container__todos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.todo-item{
+    
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: center;
+    margin-bottom: 10px;
+}
+.desc{
+    font-weight: 600;
+    font-size: 19px;
+    color:rgb(55, 92, 172);
+}
+.btns{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+.delete{
+   font-size: 13px;
+    background: none;
+    color:rgb(189, 62, 62);
+    border-radius:9px;
+    margin-left: 5px;
+    padding: 2px 7px;
+    border: 2px solid rgb(189, 62, 62);
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.delete:hover{
+    color:white;
+    background-color: rgb(189, 62, 62);
+}
+.done{
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin: 0 5px 0 0;
+	padding: 0;
+    
+	vertical-align: top;
+	outline: 2px solid rgb(28, 184, 28);
+	transition: background 0.3s ease;
+	/* background: url(checkbox.png) 0 0 no-repeat; */
+	cursor: pointer;
+   
+}
+.done:checked{
+    
+        background-image: url(/checkbox.png);
+        background-size: cover;
+}
+.checked{
+   /* background-color: rgb(6, 73, 73); */
+   opacity: 0.5;
+   text-align: line-through;
+   
+}
